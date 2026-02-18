@@ -7,9 +7,23 @@
  * and a message is printed to the Serial Monitor.
  * When no object is detected, the LED turns OFF.
  *
- * @author Bhartendu Ji
+ * @author Krish dubey
  * @date 18 Feb 2026
  */
 // Pin Definitions
 int irPin = 7;     ///< IR sensor OUT pin connected to digital pin 7
 int ledPin = 13;   ///< LED connected to digital pin 13
+
+/**
+ * @brief Initializes serial communication and pin configuration.
+ *
+ * This function runs once when the Arduino starts.
+ * - Sets IR sensor pin as INPUT
+ * - Sets LED pin as OUTPUT
+ * - Starts Serial communication at 9600 baud rate
+ */
+void setup() {
+  Serial.begin(9600);
+  pinMode(irPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
