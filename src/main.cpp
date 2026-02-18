@@ -10,3 +10,6 @@
  * @author Bhartendu Ji
  * @date 18 Feb 2026
  */
+// Pin Definitions
+int irPin = 7;     ///< IR sensor OUT pin connected to digital pin 7
+int ledPin = 13;   ///< LED connected to digital pin 13
